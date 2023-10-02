@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/Exercício6.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Menu de Exercícios</h1>
+        <a href="exercicio1.html">Exercício 1</a>
+        <a href="exercicio2.html">Exercício 2</a>
+        <a href="exercicio3.html">Exercício 3</a>
+        <a href="exercicio4.html">Exercício 4</a>
+        <a href="exercicio5.html">Exercício 5</a>
+        <a href="exercicio6.html">Exercício 6</a>
+    </div>
+    
+    <h1>Calculadora </h1>
+    <br>
+    <div class="calculator">
+        <input type="text" class="display" id="display" readonly>
+        <div class="buttons">
+            <button class="number" onclick="addToDisplay('7')">7</button>
+            <button class="number" onclick="addToDisplay('8')">8</button>
+            <button class="number" onclick="addToDisplay('9')">9</button>
+            <button class="operator" onclick="addToDisplay('/')">/</button>
+            <button class="number" onclick="addToDisplay('4')">4</button>
+            <button class="number" onclick="addToDisplay('5')">5</button>
+            <button class="number" onclick="addToDisplay('6')">6</button>
+            <button class="operator" onclick="addToDisplay('*')">*</button>
+            <button class="number" onclick="addToDisplay('1')">1</button>
+            <button class="number" onclick="addToDisplay('2')">2</button>
+            <button class="number" onclick="addToDisplay('3')">3</button>
+            <button class="operator" onclick="addToDisplay('-')">-</button>
+            <button class="number" onclick="addToDisplay('0')">0</button>
+            <button class="operator" onclick="addToDisplay('.')">.</button>
+            <button class="operator" onclick="calculateResult()">=</button>
+            <button class="operator" onclick="addToDisplay('+')">+</button>
+        </div>
+        <button class="clear" onclick="clearDisplay()">C</button>
+    </div>
+</body>
+</html>
