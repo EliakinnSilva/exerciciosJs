@@ -9,7 +9,7 @@
     </head>
     <body>
         <div class="navbar">
-            <h1>Menu de Exercícios</h1>
+            <h1>Sequencia Fibronacci</h1>
             <a href="exercicio1.html">Exercício 1</a>
             <a href="exercicio2.html">Exercício 2</a>
             <a href="exercicio3.html">Exercício 3</a>
@@ -18,7 +18,8 @@
             <a href="exercicio6.html">Exercício 6</a>
         </div>
         <h1>Exercício 3</h1>
-        <button onclick="gerarFibonacci()">Gerar Sequência de Fibonacci</button>
+        <button onclick="gerarFibonacci()"> <br>
+            Gerar Sequência de Fibonacci</button>
         <div id="resultado"></div>
 
         <script>
@@ -30,7 +31,7 @@
                     fib[i] = fib[i - 1] + fib[i - 2];
                 }
 
-                resultado = fib.slice(0, 11).join(", ");
+                resultado = fib.slice(0, 10).join(", ");
                 document.getElementById('resultado').innerHTML = `Sequência de Fibonacci: ${resultado}`;
             }
         </script>

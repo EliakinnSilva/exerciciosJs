@@ -5,7 +5,7 @@ body {
 }
 
 .navbar {
-    background-color: #333;
+    background-color: #4550ee;
     position: fixed;
     top: 0;
     width: 100%;
@@ -23,6 +23,6 @@ body {
 }
 
 .navbar a:hover {
-    background-color: #ddd;
+    background-color: #f11515;
     color: black;
 }
