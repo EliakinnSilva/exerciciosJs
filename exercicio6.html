@@ -20,27 +20,38 @@
     
     <h1>Calculadora </h1>
     <br>
-    <div class="calculator">
-        <input type="text" class="display" id="display" readonly>
-        <div class="buttons">
-            <button class="number" onclick="addToDisplay('7')">7</button>
-            <button class="number" onclick="addToDisplay('8')">8</button>
-            <button class="number" onclick="addToDisplay('9')">9</button>
-            <button class="operator" onclick="addToDisplay('/')">/</button>
-            <button class="number" onclick="addToDisplay('4')">4</button>
-            <button class="number" onclick="addToDisplay('5')">5</button>
-            <button class="number" onclick="addToDisplay('6')">6</button>
-            <button class="operator" onclick="addToDisplay('*')">*</button>
-            <button class="number" onclick="addToDisplay('1')">1</button>
-            <button class="number" onclick="addToDisplay('2')">2</button>
-            <button class="number" onclick="addToDisplay('3')">3</button>
-            <button class="operator" onclick="addToDisplay('-')">-</button>
-            <button class="number" onclick="addToDisplay('0')">0</button>
-            <button class="operator" onclick="addToDisplay('.')">.</button>
-            <button class="operator" onclick="calculateResult()">=</button>
-            <button class="operator" onclick="addToDisplay('+')">+</button>
-        </div>
-        <button class="clear" onclick="clearDisplay()">C</button>
-    </div>
+    <table class="calculator">
+        <tr>
+            <td colspan="4"><input type="text" class="display" id="display" readonly></td>
+        </tr>
+        <tr>
+            <td><button class="number" onclick="addToDisplay('7')">7</button></td>
+            <td><button class="number" onclick="addToDisplay('8')">8</button></td>
+            <td><button class="number" onclick="addToDisplay('9')">9</button></td>
+            <td><button class="operator" onclick="addToDisplay('/')">/</button></td>
+        </tr>
+        <tr>
+            <td><button class="number" onclick="addToDisplay('4')">4</button></td>
+            <td><button class="number" onclick="addToDisplay('5')">5</button></td>
+            <td><button class="number" onclick="addToDisplay('6')">6</button></td>
+            <td><button class="operator" onclick="addToDisplay('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button class="number" onclick="addToDisplay('1')">1</button></td>
+            <td><button class="number" onclick="addToDisplay('2')">2</button></td>
+            <td><button class="number" onclick="addToDisplay('3')">3</button></td>
+            <td><button class="operator" onclick="addToDisplay('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="number" onclick="addToDisplay('0')">0</button></td>
+            <td><button class="operator" onclick="addToDisplay('.')">.</button></td>
+            <td><button class="operator" onclick="calculateResult()">=</button></td>
+            <td><button class="operator" onclick="addToDisplay('+')">+</button></td>
+            <td><button ckass="operator" onclick="clear('<')"> < </button>  </td>
+        </tr>
+        <tr>
+            <td colspan="4"><button class="clear" onclick="clearDisplay()">C</button></td>
+        </tr>
+    </table>
 </body>
 </html>

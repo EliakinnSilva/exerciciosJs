@@ -15,3 +15,7 @@ function calculateResult() {
 function clearDisplay() {
     display.value = '';
 }
+
+// function clear() {
+//     display.value='';
+// }
